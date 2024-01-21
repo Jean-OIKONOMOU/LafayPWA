@@ -54,8 +54,22 @@ let output = ""
 output += `<div class="card"><img class="card--avatar" id="stretchingImage" src=${stretchingPoses[0].image} alt=${stretchingPoses[0].name}/></div>`;
 container.innerHTML = output;
 
-
 let imgCounter = 0;
+
+document.onkeydown = checkKeyStretch;
+
+function checkKeyStretch(e) {
+  // e = e || window.event;
+
+  if (e.keyCode == '39') {
+    nextImage();
+  } else if (e.keyCode == '37') {
+    previousImage();
+  } else if (e.keyCode == '72') {
+    let currentUrl = window.location.href;
+    window.location.href = "http://127.0.0.1:5500/index.html";
+  }  
+}
 
 const nextImage = () => {
   imgCounter++;

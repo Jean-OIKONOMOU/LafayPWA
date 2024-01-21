@@ -7,8 +7,9 @@
 }
 
 .container--main img {
-    height: 50vh;
-    width:  auto;
+    height: auto;
+    max-height: 80vh;
+    width:  50%;
     max-width: 80vw;
 }
 
