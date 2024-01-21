@@ -1,9 +1,9 @@
 {
     "name": "Lafay Method",
     "short_name": "Lafay",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
-    "display": "minimal-ui",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone",
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
