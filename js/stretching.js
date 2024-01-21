@@ -65,10 +65,7 @@ function checkKeyStretch(e) {
     nextImage();
   } else if (e.keyCode == '37') {
     previousImage();
-  } else if (e.keyCode == '72') {
-    let currentUrl = window.location.href;
-    window.location.href = "http://127.0.0.1:5500/index.html";
-  }  
+  } 
 }
 
 const nextImage = () => {

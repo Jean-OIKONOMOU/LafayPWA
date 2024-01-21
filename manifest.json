@@ -1,11 +1,12 @@
 {
     "name": "Lafay Method",
     "short_name": "Lafay",
-    "start_url": "index.html",
-    "display": "standalone",
-    "background_color": "#000000",
-    "theme_color": "#000000",
-    "orientation": "portrait-primary",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "minimal-ui",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
     "icons": [
         {
             "src": "img/iconx/android-chrome-192x192.png",
@@ -18,4 +19,4 @@
             "type": "image/png"
         }
     ]
-  }
+}
