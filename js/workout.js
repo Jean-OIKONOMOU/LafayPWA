@@ -63,6 +63,7 @@ const nextImage = () => {
     };
     document.getElementById("stretchingImage").src = poses[imgCounter].image;
     document.getElementById("stretchingImage").alt = poses[imgCounter].name;
+    document.getElementById("sets").innerHTML = poses[imgCounter].sets + " sets";
 };
 
 const previousImage = () => {
@@ -72,6 +73,7 @@ const previousImage = () => {
     };
     document.getElementById("stretchingImage").src = poses[imgCounter].image;
     document.getElementById("stretchingImage").alt = poses[imgCounter].name;
+    document.getElementById("sets").innerHTML = poses[imgCounter].sets + " sets";    
 };
 
 document.onkeydown = checkKeyStretch;
@@ -90,7 +92,7 @@ const levelOne = (images) => {
     showControls();
     
     let output = ""
-    output += `<div class="card"><img class="card--avatar" id="stretchingImage" src=${images[0].image} alt=${images[0].name}/><h1 style="margin-top:10px;font-size:2rem;">${images[0].sets} sets</h1></div>`;
+    output += `<div class="card"><img class="card--avatar" id="stretchingImage" src=${images[0].image} alt=${images[0].name}/><h1 id="sets" style="margin-top:10px;font-size:2rem;">${images[0].sets} sets</h1></div>`;
     container.innerHTML = output;
 
     poses = levelOnePoses;
@@ -100,7 +102,7 @@ const levelTwo = (images) => {
     showControls();
 
     let output = ""
-    output += `<div class="card"><img class="card--avatar" id="stretchingImage" src=${images[0].image} alt=${images[0].name}/><h1 style="margin-top:10px;font-size:2rem;">${images[0].sets} sets</h1></div>`;
+    output += `<div class="card"><img class="card--avatar" id="stretchingImage" src=${images[0].image} alt=${images[0].name}/><h1 id="sets" style="margin-top:10px;font-size:2rem;">${images[0].sets} sets</h1></div>`;
     container.innerHTML = output;
 
     poses = levelTwoPoses;
