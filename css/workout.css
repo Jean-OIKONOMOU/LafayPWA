@@ -19,14 +19,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-/* .container--main img {
+.container--main img {
     height: auto;
     max-height: 80vh;
     width:  50%;
     max-width: 80vw;
-} */
+}
 
 .container--main button {
   width: 85%;
