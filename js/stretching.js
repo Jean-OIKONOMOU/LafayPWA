@@ -37,19 +37,6 @@ const stretchingPoses = [
   { name: "35", image: "img/stretching/35.png" }
 ]
 
-// const showStretchingPoses = () => {
-//     let output = ""
-//     stretchingPoses.forEach(
-//       ({ name, image }) =>
-//         (output += `
-//                 <div class="card">
-//                   <img class="card--avatar" id="stretchingImage" src=${image} />
-//                 </div>
-//                 `)
-//     )
-//     container.innerHTML = output
-//   }
-
 let output = ""
 output += `<div class="card"><img class="card--avatar" id="stretchingImage" src=${stretchingPoses[0].image} alt=${stretchingPoses[0].name}/></div>`;
 container.innerHTML = output;

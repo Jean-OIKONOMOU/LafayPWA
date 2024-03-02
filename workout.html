@@ -20,8 +20,8 @@
         <meta name="msapplication-TileColor" content="#da532c"> 
     </head>
 <body>
-    <div class="previous"></div>
-    <div class="next"></div>
+    <div class="previous" onclick="previousImage()"></div>
+    <div class="next" onclick="nextImage()"></div>
     <div class="container">
         <div class="container--tools">
             <div class="tool--home"><a href="index.html">
@@ -31,7 +31,10 @@
             </a></div>
             <div class="tool--timer"></div>
         </div>
-        <main class="container--main"></main>
+        <main class="container--main">
+            <button onclick="levelOne(levelOnePoses)" role="button">Level One Workout</button>
+            <button onclick="levelTwo(levelTwoPoses)" role="button">Level Two Workout</button>
+        </main>
     </div>
     <script src="js/workout.js"></script>
     <script src="js/app.js"></script>

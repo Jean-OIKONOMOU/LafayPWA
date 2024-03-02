@@ -6,6 +6,10 @@
     --red : #ff5714;
   }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
